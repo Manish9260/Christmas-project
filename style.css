@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #001d47, #000);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Container */
+  .container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ff6347, 0 0 20px #ff4500;
+  }
+  
+  /* Countdown Styles */
+  .countdown {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  .time span {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00;
+  }
+  
+  .time small {
+    font-size: 1rem;
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  /* Message */
+  .message {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #ffcc00;
+    animation: fade-in 2s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes glow {
+    to {
+      text-shadow: 0 0 20px #ffcc00, 0 0 40px #ff4500;
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  button {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #ff5733;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #c70039;
+  }  
